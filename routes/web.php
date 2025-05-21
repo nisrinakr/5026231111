@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Coba;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 //kalo di java import java.io.*;
 
 //kalo di java Route.get()
@@ -72,3 +74,15 @@ Route::get('js1', function () {
 Route::get('ets', function () {
 	return view('ets');
 });
+
+Route::get('dosen', [Coba::class,  'index']);
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+
+Route::get('/formulir', [PegawaiController::class, 'formulir']); //halaman isian
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']); //action form
+
+//route blog
+Route::get('/blog', [BlogController::class, 'home']);
+Route::get('/blog/tentang', [BlogController::class, 'tentang']);
+Route::get('/blog/kontak', [BlogController::class, 'kontak']);
