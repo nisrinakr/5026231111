@@ -61,6 +61,7 @@ class PegawaiDBController extends Controller
     }
 
         // method untuk hapus data pegawai
+
     public function hapus($id)
     {
         // menghapus data pegawai berdasarkan id yang dipilih
