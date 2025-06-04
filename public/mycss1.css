@@ -1,0 +1,32 @@
+body {
+    font-family: "Inter";
+    background-color: rosybrown;
+    color: rgb(220, 220, 220);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p {
+    text-decoration: underline;
+    text-decoration: rgb(106, 55, 50);
+}
+
+a:link {
+    color: rgb(36, 33, 38);
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: solid;
+}
+
+a:visited {
+  color: rgb(89, 38, 89)
+}
+
+.kalimatpembuka {
+    font-size: large;
+    border: rgb(48, 28, 14);
+    border-radius: 50px;
+}
