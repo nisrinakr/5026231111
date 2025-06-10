@@ -5,6 +5,8 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\SepedaDBController;
+
 
 //kalo di java import java.io.*;
 
@@ -89,6 +91,23 @@ Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 //route CRUD
+
+Route::get('/sepeda', [SepedaDBController::class, 'index']);
+
+Route::get('/sepeda/tambah', [PegawaiDBController::class, 'tambah']);
+
+Route::post('/sepeda/store',[PegawaiDBController::class, 'store']);
+
+Route::get('/sepeda/edit/{id}',[PegawaiDBController::class, 'edit']);
+
+Route::post('/sepeda/update',[PegawaiDBController::class, 'update']);
+
+Route::get('/sepeda/hapus/{id}',[PegawaiDBController::class, 'hapus']);
+
+Route::get('/sepeda/cari', [PegawaiDBController:: class, 'cari']);
+
+
+
 Route::get('/pegawai', [PegawaiDBController::class, 'index']);
 
 Route::get('/pegawai/tambah', [PegawaiDBController::class, 'tambah']);

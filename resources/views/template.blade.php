@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Shahnaz Ariqah Simanullang : 5026231087</title>
+    <title>Nisrina Kamiliya Riswanto : 502623111</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -33,7 +33,7 @@
                 <a class="nav-link" href="/pegawai">Pegawai</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tugas CRUD</a>
+                <a class="nav-link" href="/crud">Tugas CRUD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">EAS</a>
