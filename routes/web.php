@@ -6,6 +6,8 @@ use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SepedaDBController;
+use App\Http\Controllers\keranjangbelanjaDBController;
+
 
 
 //kalo di java import java.io.*;
@@ -91,6 +93,12 @@ Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
 //route CRUD
+
+Route::get('/keranjangbelanja', [keranjangbelanjaDBController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [keranjangbelanjaDBController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [keranjangbelanjaDBController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{id}', [keranjangbelanjaDBController::class, 'hapus']);
+
 
 Route::get('/sepeda', [SepedaDBController::class, 'index']);
 
