@@ -7,7 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SepedaDBController;
 use App\Http\Controllers\keranjangbelanjaDBController;
-
+use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\TrafficController;
 
 
 //kalo di java import java.io.*;
@@ -130,6 +131,12 @@ Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class, 'hapus']);
 
 Route::get('/pegawai/cari', [PegawaiDBController:: class, 'cari']);
 
+Route::get('/karyawan', [KaryawanController::class, 'index'])->name('karyawan.index');
+Route::get('/karyawan/tambah', [KaryawanController::class, 'create']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::delete('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'destroy'])->name('karyawan.destroy');
+
+Route::get('/pagecounter', [TrafficController::class, 'index']);
 
 Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
 
